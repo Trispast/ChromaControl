@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChromaControl.Abstractions\ChromaControl.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LightFX">
+      <HintPath>..\..\..\..\..\Documents\alienfx\Managed\DLL\LightFX.dll</HintPath>
+    </Reference>
+    <Reference Include="LightFXConfigurator">
+      <HintPath>..\..\..\..\..\Documents\alienfx\Managed\DLL\LightFXConfigurator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
