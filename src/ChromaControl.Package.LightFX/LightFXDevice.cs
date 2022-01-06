@@ -7,11 +7,11 @@ namespace ChromaControl.Providers.LightFX
 {
     public class LightFXDevice : IDevice
     {
-        public string Name => _device;
+        public string Name => "Temp";
 
         public IEnumerable<IDeviceLight> Lights => _lights;
 
-        public int NumberOfLights;
+        public int NumberOfLights => 0;
 
         private readonly uint _deviceIndex;
 

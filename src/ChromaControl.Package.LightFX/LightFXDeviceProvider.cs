@@ -7,7 +7,6 @@ using System.Diagnostics;
 using System.Threading;
 using ChromaControl.Abstractions;
 using LightFX;
-using Microsoft.Extensions.Logging;
 
 namespace ChromaControl.Providers.LightFX
 {
