@@ -138,19 +138,20 @@ namespace ChromaControl
 
             VersionNumberText.Text = $"{packageVersion.Major}.{packageVersion.Minor}.{packageVersion.Build}";
 
-            var lightFXStartupTask = await StartupTask.GetAsync("LightFX");
             var asusStartupTask = await StartupTask.GetAsync("Asus");
             var corsairStartupTask = await StartupTask.GetAsync("Corsair");
-            
-            if (lightFXStartupTask.State == StartupTaskState.Enabled)
-                LightFXToggleSwitch.IsOn = true;
+            var lightFXStartupTask = await StartupTask.GetAsync("LightFX");
+
 
             if (asusStartupTask.State == StartupTaskState.Enabled)
                 AsusToggleSwitch.IsOn = true;
 
             if (corsairStartupTask.State == StartupTaskState.Enabled)
                 CorsairToggleSwitch.IsOn = true;
-            
+
+            if (lightFXStartupTask.State == StartupTaskState.Enabled)
+                LightFXToggleSwitch.IsOn = true;
+
             var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
 
             if (debugMode != null && (bool)debugMode)
