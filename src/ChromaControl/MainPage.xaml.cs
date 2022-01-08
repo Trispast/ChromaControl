@@ -138,15 +138,19 @@ namespace ChromaControl
 
             VersionNumberText.Text = $"{packageVersion.Major}.{packageVersion.Minor}.{packageVersion.Build}";
 
+            var lightFXStartupTask = await StartupTask.GetAsync("LightFX");
             var asusStartupTask = await StartupTask.GetAsync("Asus");
             var corsairStartupTask = await StartupTask.GetAsync("Corsair");
+            
+            if (lightFXStartupTask.State == StartupTaskState.Enabled)
+                LightFXToggleSwitch.IsOn = true;
 
             if (asusStartupTask.State == StartupTaskState.Enabled)
                 AsusToggleSwitch.IsOn = true;
 
             if (corsairStartupTask.State == StartupTaskState.Enabled)
                 CorsairToggleSwitch.IsOn = true;
-
+            
             var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
 
             if (debugMode != null && (bool)debugMode)
@@ -177,6 +181,16 @@ namespace ChromaControl
                 await ToggleModule("Corsair", CorsairToggleSwitch.IsOn);
         }
 
+        /// <summary>
+        /// Occurs when the Corsair toggle switch is toggled
+        /// </summary>
+        /// <param name="sender">The sender</param>
+        /// <param name="e">The arguments</param>
+        private async void LightFXToggleSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (_pageLoaded)
+                await ToggleModule("LightFX", LightFXToggleSwitch.IsOn);
+        }
         /// <summary>
         /// Toggles a module on or off
         /// </summary>

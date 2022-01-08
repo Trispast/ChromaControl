@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaControl.Security", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaControl.Providers.LightFX", "ChromaControl.Providers.LightFX\ChromaControl.Providers.LightFX.csproj", "{88A9EF7B-D0D9-403C-A82F-C4CC43EE593E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaControl.LightFX", "ChromaControl.LightFX\ChromaControl.LightFX.csproj", "{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,18 @@ Global
 		{88A9EF7B-D0D9-403C-A82F-C4CC43EE593E}.Release|x64.Build.0 = Release|Any CPU
 		{88A9EF7B-D0D9-403C-A82F-C4CC43EE593E}.Release|x86.ActiveCfg = Release|Any CPU
 		{88A9EF7B-D0D9-403C-A82F-C4CC43EE593E}.Release|x86.Build.0 = Release|Any CPU
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|Any CPU.Build.0 = Debug|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|x64.ActiveCfg = Debug|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|x64.Build.0 = Debug|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|x86.ActiveCfg = Debug|x86
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Debug|x86.Build.0 = Debug|x86
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|Any CPU.ActiveCfg = Release|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|Any CPU.Build.0 = Release|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|x64.ActiveCfg = Release|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|x64.Build.0 = Release|x64
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|x86.ActiveCfg = Release|x86
+		{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

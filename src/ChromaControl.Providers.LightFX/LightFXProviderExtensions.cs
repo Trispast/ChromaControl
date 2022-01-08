@@ -2,15 +2,28 @@
 // The Chroma Control Contributors licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ChromaControl.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace ChromaControl.Providers.LightFX
 {
-    internal class LightFXProviderExtensions
+    /// <summary>
+    /// LightFX provider extensions
+    /// </summary>
+    public static class LightFXProviderExtensions
     {
+        /// <summary>
+        /// Uses the LightFX device provider
+        /// </summary>
+        /// <param name="hostBuilder">The host builder</param>
+        /// <returns>The host builder</returns>
+        public static IHostBuilder UseLightFXProvider(this IHostBuilder hostBuilder)
+        {
+            return hostBuilder.ConfigureServices((hostContext, services) =>
+            {
+                services.AddSingleton(typeof(IDeviceProvider), typeof(LightFXDeviceProvider));
+            });
+        }
     }
 }
