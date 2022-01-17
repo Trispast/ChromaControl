@@ -4,7 +4,7 @@
 
 using System.Drawing;
 using ChromaControl.Abstractions;
-using LightFX;
+using LightFXsdk;
 
 namespace ChromaControl.Providers.LightFX
 {
@@ -20,11 +20,12 @@ namespace ChromaControl.Providers.LightFX
         }
         private Color GetColor()
         {
-            return Color.FromArgb(_deviceLight.red, _deviceLight.green, _deviceLight.blue);
+            return Color.FromArgb(_deviceLight.brightness, _deviceLight.red, _deviceLight.green, _deviceLight.blue);
         }
 
         private void SetColor(Color value)
         {
+            _deviceLight.brightness = value.A;
             _deviceLight.red = value.R;
             _deviceLight.green = value.G;
             _deviceLight.blue = value.B;

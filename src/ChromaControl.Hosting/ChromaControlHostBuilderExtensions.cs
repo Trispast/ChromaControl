@@ -36,7 +36,8 @@ namespace ChromaControl.Hosting
         /// <returns>The host builder</returns>
         public static IHostBuilder UseChromaControl(this IHostBuilder hostBuilder)
         {
-            var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
+            //var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
+            var debugMode = true;
 
             if (debugMode != null && (bool)debugMode)
             {
@@ -44,7 +45,8 @@ namespace ChromaControl.Hosting
                 Console.Title = Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location);
             }
 
-            var logFolder = Path.Combine(ApplicationData.Current.LocalFolder.Path, "logs");
+            //var logFolder = Path.Combine(ApplicationData.Current.LocalFolder.Path, "logs");
+            var logFolder = "c:\\logs\\";
 
             if (!Directory.Exists(logFolder))
                 Directory.CreateDirectory(logFolder);

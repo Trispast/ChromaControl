@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using ChromaControl.Abstractions;
-using LightFX;
+using LightFXsdk;
 
 
 namespace ChromaControl.Providers.LightFX
@@ -22,29 +22,27 @@ namespace ChromaControl.Providers.LightFX
 
         private readonly List<LightFXDeviceLight> _lights;
 
-        internal LightFXDevice(int deviceIndex)
+        internal LightFXDevice(LightFXController device, int deviceIndex)
         {
             _deviceIndex = deviceIndex;
-            _device = new LightFXController();
+            _device = device;
             _lights = new List<LightFXDeviceLight>();
 
             LFX_Result result = _device.LFX_Initialize();
 
-            if (result == LFX_Result.LFX_Success)
+            if (result == LFX_Result.LFX_SUCCESS)
             {
-                StringBuilder description;
-                LFX_DeviceType type;
+                if (_deviceIndex == 0)
+                    _description = "Alienware 34 Curved Monitor";
+                else
+                    _description = "Alienware AuroraR5 Chassis";
+                //_description = _device.LFX_GetDeviceDescription(_deviceIndex);
 
-                _device.LFX_GetDeviceDescription((uint)_deviceIndex, out description, 255, out type);
-                _description = description.ToString();
+                int numLights = _device.LFX_GetNumLights(_deviceIndex);
 
-                uint numLights;
-                _device.LFX_GetNumLights((uint)_deviceIndex, out numLights);
-
-                for (uint lightIndex = 0; lightIndex < numLights; lightIndex++)
+                for (int lightIndex = 0; lightIndex < numLights; lightIndex++)
                 {
-                    LFX_ColorStruct light;
-                    _device.LFX_GetLightColor((uint)_deviceIndex, lightIndex, out light);
+                    LFX_ColorStruct light = _device.LFX_GetLightColor(_deviceIndex, lightIndex);
                     _lights.Add(new LightFXDeviceLight(light));
                 }
             }

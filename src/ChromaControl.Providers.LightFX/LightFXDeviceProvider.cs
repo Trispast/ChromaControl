@@ -2,50 +2,52 @@
 // The Chroma Control Contributors licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
-using System.Collections.Generic;
+using LightFXsdk;
+using System;
 using System.Diagnostics;
-using System.Threading;
 using ChromaControl.Abstractions;
-using LightFX;
+
 
 namespace ChromaControl.Providers.LightFX
 {
     internal class LightFXDeviceProvider : IDeviceProvider
     {
-        public string Name => "LightFX";
+        public string Name => "Corsair";
 
         public IEnumerable<IDevice> Devices => _devices;
 
         private readonly List<LightFXDevice> _devices;
 
-        private LightFXController _sdk => new LightFXController();
+        private readonly LightFXController _sdk;
+
+        private LFX_Result _result;
 
         public LightFXDeviceProvider()
         {
             _devices = new List<LightFXDevice>();
+            _sdk = new LightFXController();
+            _result = _sdk.LFX_Initialize();
         }
 
         public void Initialize()
         {
-           // PerformHealthCheck();
+            PerformHealthCheck();
 
-            Thread.Sleep(30000);
+            //Thread.Sleep(30000);
+            RequestControl();
 
-            LFX_Result result = _sdk.LFX_Initialize();
-
-            if (result == LFX_Result.LFX_Success)
+            if (_result == LFX_Result.LFX_SUCCESS)
             {
-                uint devicecount;
-                _sdk.LFX_GetNumDevices(out devicecount);
+                int devicecount;
+                devicecount = _sdk.LFX_GetNumDevices();
 
-                for (int i = 0; i < ((int)devicecount); i++)
+                for (int i = 0; i < devicecount; i++)
                 {
-
-                    _devices.Add(new LightFXDevice(i));
+                    _devices.Add(new LightFXDevice(_sdk, (int)i));
                 }
 
             }
-            _sdk.LFX_Release();
+
         }
 
         public void PerformHealthCheck()
@@ -62,12 +64,12 @@ namespace ChromaControl.Providers.LightFX
 
         public void RequestControl()
         {
-
+            _sdk.LFX_Initialize();
         }
 
         public void ReleaseControl()
         {
-
+            _result = _sdk.LFX_Release();
         }
     }
 }

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChromaControl.Abstractions\ChromaControl.Abstractions.csproj" />
+    <ProjectReference Include="..\LightFXsdk.net\LightFXsdk.net.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,9 +21,6 @@
     </Reference>
     <Reference Include="AlienwareAlienFXTools">
       <HintPath>..\..\..\..\..\..\..\Program Files\Alienware\Command Center\AlienwareAlienFXTools.dll</HintPath>
-    </Reference>
-    <Reference Include="LightFX">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Alienware\Command Center\AlienFX SDK\Managed\DLL\LightFX.dll</HintPath>
     </Reference>
   </ItemGroup>
 
