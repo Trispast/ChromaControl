@@ -10,7 +10,7 @@ using ChromaControl.Abstractions;
 
 namespace ChromaControl.Providers.LightFX
 {
-    internal class LightFXDeviceProvider : IDeviceProvider
+    public class LightFXDeviceProvider : IDeviceProvider
     {
         public string Name => "Corsair";
 

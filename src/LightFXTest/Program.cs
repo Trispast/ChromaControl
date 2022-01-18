@@ -1,5 +1,7 @@
 ﻿using ChromaControl.Providers.LightFX;
 using LightFXsdk;
+using System.Drawing;
+using System.Text;
 
 // See https://aka.ms/new-console-template for more information
 
@@ -19,44 +21,67 @@ if (result == LFX_Result.LFX_SUCCESS)
         int numLights = lightFX.LFX_GetNumLights(devIndex);
 
         var green = new LFX_ColorStruct(255, 0, 255, 255);
-        var red = new LFX_ColorStruct(255, 255, 0, 255);
+        var red = new LFX_ColorStruct(255, 0, 255, 255);
         for (int lightIndex = 0; lightIndex < numLights; lightIndex++)
             lightFX.LFX_SetLightColor(devIndex, lightIndex, lightIndex % 2 == 0 ? red : green);
     }
 
+     /*
+    for (int devIndex = 0; devIndex < numDevs; devIndex++)
+    {
+        StringBuilder devDescription;
+        LFX_DeviceType type;
+        string temp;
+        temp = lightFX.LFX_GetDeviceDescription(devIndex);
+        if (result != LFX_Result.LFX_SUCCESS)
+            continue;
 
-     /*for (int devIndex = 0; devIndex < numDevs; devIndex++)
-     {
-         StringBuilder devDescription;
-         LFX_DeviceType type;
+        Console.WriteLine(string.Format(temp));
 
-         result = lightFX.LFX_GetDeviceDescription(devIndex, out devDescription, 255, out type);
-         if (result != LFX_Result.LFX_Success)
-             continue;
+        int numLights = lightFX.LFX_GetNumLights(devIndex);
+        for (int lightIndex = 0; lightIndex < numLights; lightIndex++)
+        {
+            StringBuilder description;
+            temp = lightFX.LFX_GetLightDescription(devIndex, lightIndex);
+            if (result != LFX_Result.LFX_SUCCESS)
+                continue;
 
-         Console.WriteLine(string.Format("Device: {0} \tDescription: {1} \tType: {2}", devIndex, devDescription, type));
+            LFX_ColorStruct color;
+            color = lightFX.LFX_GetLightColor(devIndex, lightIndex);
+            if (result != LFX_Result.LFX_SUCCESS)
+                continue;
 
-         int numLights = lightFX.LFX_GetNumLights(devIndex);
-         for (uint lightIndex = 0; lightIndex < numLights; lightIndex++)
-         {
-             StringBuilder description;
-             result = lightFX.LFX_GetLightDescription(devIndex, lightIndex, out description, 255);
-             if (result != LFX_Result.LFX_Success)
-                 continue;
-
-             LFX_ColorStruct color;
-             result = lightFX.LFX_GetLightColor(devIndex, lightIndex, out color);
-             if (result != LFX_Result.LFX_Success)
-                 continue;
-
-             Console.WriteLine(string.Format("\tLight: {0} \tDescription: {1} \tColor: {2}", lightIndex, description, color));
-         }
-     }*/
-
+            Console.WriteLine(string.Format("\tLight: {0} \tDescription: {1} \tColor: {2}", lightIndex, temp, color));
+        }
+    }
+    */
     lightFX.LFX_Update();
     Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
     Console.ReadLine();
     lightFX.LFX_Release();
+
+    var lightFx2 = new LightFXDeviceProvider();
+
+    lightFx2.Initialize();
+
+    var numDevs2 =lightFx2.Devices.Count();
+
+    foreach (var device in lightFx2.Devices)
+    {
+        int numLights2 = device.NumberOfLights;
+
+        var green = new LFX_ColorStruct(255, 0, 255, 255);
+        var red = new LFX_ColorStruct(255, 255, 0, 255);
+        foreach (var light in device.Lights)
+        {
+            light.Color = Color.Red;
+        }
+        device.ApplyLights();
+    }
+
+    Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
+    Console.ReadLine();
+    lightFx2.ReleaseControl();
 }
 else
 {

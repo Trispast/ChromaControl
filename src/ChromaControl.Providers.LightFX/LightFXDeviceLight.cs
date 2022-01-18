@@ -8,15 +8,16 @@ using LightFXsdk;
 
 namespace ChromaControl.Providers.LightFX
 {
-    internal class LightFXDeviceLight : IDeviceLight
+    public class LightFXDeviceLight : IDeviceLight
     {
         public Color Color { get => GetColor(); set => SetColor(value); }
 
+        public int index;
         internal LFX_ColorStruct _deviceLight;
 
-        internal LightFXDeviceLight(LFX_ColorStruct deviceLight)
+        internal LightFXDeviceLight(int _index)
         {
-            _deviceLight = deviceLight;
+            index = _index;
         }
         private Color GetColor()
         {
@@ -29,6 +30,11 @@ namespace ChromaControl.Providers.LightFX
             _deviceLight.red = value.R;
             _deviceLight.green = value.G;
             _deviceLight.blue = value.B;
+        }
+
+        private void SetColor(LFX_ColorStruct value)
+        {
+            _deviceLight = value;
         }
     }
 }
