@@ -22,16 +22,4 @@
     <ProjectReference Include="..\ChromaControl.Providers.LightFX\ChromaControl.Providers.LightFX.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="AlienLabsTools">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Alienware\Command Center\AlienLabsTools.dll</HintPath>
-    </Reference>
-    <Reference Include="AlienwareAlienFXTools">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Alienware\Command Center\AlienwareAlienFXTools.dll</HintPath>
-    </Reference>
-    <Reference Include="LightFX">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Alienware\Command Center\AlienFX SDK\Managed\DLL\LightFX.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

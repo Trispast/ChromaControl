@@ -56,7 +56,7 @@ namespace ChromaControl.Hosting
                 .ConfigureLogging((hostingContext, logging) =>
                 {
                     // Disabling logging due to IOException, this only started in 0.1.2 which is weird.
-                    //logging.AddFile(Path.Combine(logFolder, $"{Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)}.log"), append: true);
+                    logging.AddFile(Path.Combine(logFolder, $"{Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)}.log"), append: true);
                 })
                 .ConfigureServices((hostContext, services) =>
                 {

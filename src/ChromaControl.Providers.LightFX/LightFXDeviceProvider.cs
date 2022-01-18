@@ -34,7 +34,7 @@ namespace ChromaControl.Providers.LightFX
             PerformHealthCheck();
 
             //Thread.Sleep(30000);
-            RequestControl();
+            //RequestControl();
 
             if (_result == LFX_Result.LFX_SUCCESS)
             {
@@ -43,6 +43,7 @@ namespace ChromaControl.Providers.LightFX
 
                 for (int i = 0; i < devicecount; i++)
                 {
+
                     _devices.Add(new LightFXDevice(_sdk, (int)i));
                 }
 

@@ -8,6 +8,14 @@ public struct LFX_ColorStruct
     public byte green;
     public byte red;
     public byte brightness;
+
+    public LFX_ColorStruct(byte brightness, byte red, byte green, byte blue)
+    {
+        this.brightness = brightness;
+        this.red = red;
+        this.green = green;
+        this.blue = blue;
+    }
 };
 
 public enum LFX_Result
@@ -131,7 +139,7 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_SetLightColor", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_SetLightColor_Native(uint devIndex, uint lightIndex, out LFX_ColorStruct lightCol);
+        private static extern LFX_Result LFX_SetLightColor_Native(uint devIndex, uint lightIndex, ref LFX_ColorStruct lightCol);
 
 
         public LFX_Result LFX_Initialize()
@@ -190,8 +198,7 @@ namespace LightFXsdk
 
         public string LFX_GetLightDescription(int devIndex, int lightIndex)
         {
-            StringBuilder lightDesc;
-            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out lightDesc, 255);
+            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out StringBuilder lightDesc, 255);
             if (result == LFX_Result.LFX_SUCCESS)
                 return lightDesc.ToString();
             else
@@ -203,11 +210,15 @@ namespace LightFXsdk
 
         public LFX_ColorStruct LFX_GetLightColor(int devIndex, int lightIndex)
         {
-            return new LFX_ColorStruct { red = 255, blue = 255, green = 255, brightness = 255 };
+            LFX_Result result = LFX_GetLightColor_Native((uint)devIndex, (uint)lightIndex, out LFX_ColorStruct lightCol);
+            return lightCol;
         }
 
-        public LFX_Result LFX_SetLightColor()
-        { return LFX_Result.LFX_SUCCESS; }
+        public LFX_Result LFX_SetLightColor(int devIndex, int lightIndex, LFX_ColorStruct lightCol)
+        {
+            LFX_Result result = LFX_SetLightColor_Native((uint)(devIndex), (uint)lightIndex, ref lightCol);
+            return result;
+        }
 
     };
 

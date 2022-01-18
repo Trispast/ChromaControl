@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaControl.Providers.Lig
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaControl.LightFX", "ChromaControl.LightFX\ChromaControl.LightFX.csproj", "{AA333B52-5C1E-4CCE-9C37-37719FA00AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightFXsdk.net", "LightFXsdk.net\LightFXsdk.net.csproj", "{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightFXsdk.net", "LightFXsdk.net\LightFXsdk.net.csproj", "{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LightFXsdk", "LightFXsdk", "{C927A710-8514-47DC-A31D-D0BE3B29A38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightFXTest", "LightFXTest\LightFXTest.csproj", "{9AD51971-6DD3-4E41-95EA-6C842A779A1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -217,9 +221,25 @@ Global
 		{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93}.Release|x64.Build.0 = Release|Any CPU
 		{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93}.Release|x86.ActiveCfg = Release|Any CPU
 		{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93}.Release|x86.Build.0 = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|x64.Build.0 = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Debug|x86.Build.0 = Debug|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|x64.ActiveCfg = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|x64.Build.0 = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|x86.ActiveCfg = Release|Any CPU
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA4EB5D2-C301-4D5A-8FC8-0EEF81FA7F93} = {C927A710-8514-47DC-A31D-D0BE3B29A38A}
+		{9AD51971-6DD3-4E41-95EA-6C842A779A1D} = {C927A710-8514-47DC-A31D-D0BE3B29A38A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72C363D5-14DF-4FD8-AD47-3B4CCEB2C9CD}
