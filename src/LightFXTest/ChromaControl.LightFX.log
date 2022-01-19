@@ -1,0 +1,819 @@
+2022-01-17T15:15:07.5232989-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:15:07.5287520-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:17:39.0665107-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:17:39.0722665-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:18:41.7423072-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:18:41.7468452-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:21:10.3661445-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:21:10.3704137-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:28:07.3996442-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:28:07.4055219-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:29:31.9295456-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T15:29:31.9361218-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T15:29:31.9411201-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T15:29:48.4369396-08:00	FAIL	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceFaulted]	BackgroundService failedSystem.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T15:29:48.4400838-08:00	CRIT	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceStoppingHost]	The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.System.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T15:30:57.6629221-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T15:30:57.6660182-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T15:31:00.6996612-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T15:31:00.6997417-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T15:31:00.6997629-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T15:31:00.8778494-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Chroma Control - Corsair Started Succesfully!
+2022-01-17T15:31:00.8939594-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T16:16:43.4140633-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:16:43.4168911-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:16:46.4562005-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:16:46.4562252-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:16:46.4562555-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:16:46.6598448-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Chroma Control - Corsair Started Succesfully!
+2022-01-17T16:16:46.6600923-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T16:17:18.2198962-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Disconnected
+2022-01-17T16:17:21.4667892-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T16:20:14.3377977-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:20:14.3448986-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:20:45.1160828-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:20:45.1185343-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:20:45.1207471-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:20:45.3974794-08:00	FAIL	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceFaulted]	BackgroundService failedSystem.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:20:45.4010166-08:00	CRIT	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceStoppingHost]	The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.System.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:44:28.5809441-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:44:28.5881925-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:49:26.6382088-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:49:26.6420962-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:49:29.6976799-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:49:29.6977192-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:49:29.6977351-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:49:29.8868668-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Chroma Control - Corsair Started Succesfully!
+2022-01-17T16:49:29.9033087-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T16:51:45.2333261-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:51:45.2379671-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:53:34.4231509-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:53:34.4247607-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:53:34.4563616-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:53:34.7223443-08:00	FAIL	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceFaulted]	BackgroundService failedSystem.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:53:34.7264615-08:00	CRIT	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceStoppingHost]	The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.System.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:54:33.4519113-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:54:33.4574828-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:54:45.9035412-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:54:45.9053414-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:54:45.9071981-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:54:46.1782382-08:00	FAIL	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceFaulted]	BackgroundService failedSystem.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:54:46.1822494-08:00	CRIT	[Microsoft.Extensions.Hosting.Internal.Host]	[BackgroundServiceStoppingHost]	The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.System.ArgumentException: Value does not fall within the expected range.
+   at ChromaControl.Security.Guids.GetSecureGuid(String name) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Security\Guids.cs:line 25
+   at ChromaControl.Abstractions.IDeviceProvider.GetGuid() in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Abstractions\IDeviceProvider.cs:line 25
+   at ChromaControl.Hosting.ModuleService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Matthew Severns.000\Source\Repos\ChromaControl\src\ChromaControl.Hosting\ModuleService.cs:line 74
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+
+2022-01-17T16:56:45.2490870-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T16:56:45.2516154-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T16:56:48.2970210-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T16:56:48.2970481-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T16:56:48.2970580-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T16:56:48.4956877-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Chroma Control - Corsair Started Succesfully!
+2022-01-17T16:56:48.5046133-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T16:58:13.0547851-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Disconnected
+2022-01-17T16:58:16.6575290-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T17:01:17.1215558-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Chroma Control - Corsair v1.0.0...
+2022-01-17T17:01:17.1251561-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Device Provider...
+2022-01-17T17:01:20.1736057-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware 34 Curved Monitor - 4 Lights
+2022-01-17T17:01:20.1736492-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Found Device: Alienware AuroraR5 Chassis - 3 Lights
+2022-01-17T17:01:20.1736698-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Initializing Razer Chroma Broadcast SDK...
+2022-01-17T17:01:20.3766799-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Chroma Control - Corsair Started Succesfully!
+2022-01-17T17:01:20.3780902-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.3807690-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.3809548-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.3811008-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Razer Chroma Broadcast API Connected
+2022-01-17T17:01:20.4074457-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.4075119-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.4075880-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.4546561-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.4547452-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.4547622-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5019971-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.5020997-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5021212-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5322975-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.5323619-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5323817-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5790062-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.5791309-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.5791523-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6106547-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.6107495-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6107744-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6572952-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.6573644-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6573905-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6894912-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.6896783-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.6897228-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.7370716-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.7371321-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.7371522-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.7818578-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.7818924-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.7819116-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8134298-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.8134653-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8134819-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8608411-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.8608916-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8609000-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8911561-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.8912080-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.8912395-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.9391115-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.9391492-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.9391666-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.9708923-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:20.9709605-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:20.9709707-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0167029-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.0167279-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0167329-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0486348-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.0486699-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0487138-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0956037-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.0956359-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.0956429-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.1424678-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.1425128-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.1425618-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.1732061-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.1732355-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.1732450-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2193284-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.2193782-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2193965-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2503715-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.2504431-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2504735-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2976907-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.2977413-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.2978015-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.3740985-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.3741889-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.3742413-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4205909-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.4206212-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4206393-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4513578-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.4513897-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4513953-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4972108-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.4972380-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.4972428-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.5292315-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.5292688-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.5292805-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.5753387-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.5753778-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.5753914-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.6220616-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.6220909-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.6221079-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.6528445-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.6528709-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.6528881-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7007530-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.7007928-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7008048-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7320850-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.7321115-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7321243-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7797439-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.7797693-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.7797739-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8113524-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.8113809-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8113860-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8586137-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.8586637-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8586737-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8901156-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.8901531-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.8901689-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.9369014-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.9369321-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.9369513-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.9824025-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:21.9824277-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:21.9824382-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0127929-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.0128212-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0128274-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0586846-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.0587233-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0587384-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0904012-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.0904466-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.0904572-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.1382152-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.1382789-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.1383034-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.1696771-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.1697168-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.1697572-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2156731-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.2157218-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2157602-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2475885-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.2476269-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2476486-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2958348-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.2958837-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.2959031-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.3423627-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.3424113-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.3424298-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.3736022-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.3736358-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.3736499-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4204791-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.4205327-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4205545-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4518210-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.4518471-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4518522-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4975958-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.4976624-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.4976848-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.5284668-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.5285027-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.5285118-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.5757313-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.5757553-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.5757830-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6223804-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.6224289-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6224356-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6536920-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.6537142-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6537178-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6996102-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.6996401-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.6996440-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.7301126-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.7301468-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.7301587-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.7767946-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.7768207-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.7768901-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.8079446-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.8080334-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.8080629-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.8558136-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.8558361-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.8558395-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9016009-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.9016299-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9016393-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9330364-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.9330811-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9330879-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9797638-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:22.9797941-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:22.9797984-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0112117-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.0112346-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0112385-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0588848-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.0589208-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0589468-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0896528-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.0896754-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.0896790-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.1351893-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.1352264-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.1352365-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.1819829-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.1820382-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.1820486-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2130847-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.2131065-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2131104-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2610636-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.2611155-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2611265-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2923401-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.2923757-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.2923964-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.3404250-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.3404690-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.3405106-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.3720128-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.3720378-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.3720639-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4198940-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.4199163-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4199384-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4524676-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.4524917-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4524967-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4996786-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.4997160-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.4997284-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.5314703-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.5315152-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.5315267-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.5785703-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.5786002-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.5786084-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.6104074-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.6104602-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.6104951-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.6567144-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.6567548-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.6567598-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.7340394-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.7340647-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.7340701-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.7819093-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.7819482-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.7819577-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.8131338-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.8132003-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.8132167-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.8597046-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.8597431-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.8597583-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.9372489-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.9372988-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.9373175-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.9818389-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:23.9818781-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:23.9819077-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0127403-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.0127868-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0127962-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0600570-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.0601043-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0601370-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0920172-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.0920512-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.0920591-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.1375913-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.1376248-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.1376327-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.1680592-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.1681348-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.1681472-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2143082-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.2143330-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2143373-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2600748-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.2601024-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2601379-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2912349-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.2912631-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.2912754-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.3385509-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.3385983-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.3386323-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.3704048-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.3706925-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.3707378-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4172333-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.4172899-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4172935-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4474672-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.4475011-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4475050-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4932231-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.4932628-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.4932722-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.5407219-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.5407631-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.5408155-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.5720382-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.5720751-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.5720966-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6180515-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.6180799-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6180855-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6495673-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.6496173-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6496432-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6957373-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.6957662-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.6957735-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.7272563-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.7272943-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.7273000-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.7751363-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.7751742-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.7751878-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.8221913-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.8222188-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.8222371-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.8535370-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.8535695-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.8535884-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9004870-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.9005140-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9005199-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9314232-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.9314515-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9314610-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9789754-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:24.9790133-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:24.9790270-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.0107886-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.0108187-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.0108223-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.0560190-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.0560447-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.0560771-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1017444-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.1017668-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1018171-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1327152-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.1327399-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1327499-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1801689-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.1802037-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.1802152-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2114264-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.2114597-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2114717-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2572249-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.2572474-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2572783-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2883275-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.2883746-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.2883784-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.3343129-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.3343579-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.3343660-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.3812517-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.3812857-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.3813118-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4136065-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.4136300-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4136578-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4607508-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.4607896-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4607932-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4915218-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.4915434-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.4915468-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.5390995-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.5391221-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.5391497-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.5695413-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.5696240-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.5696324-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6157224-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.6157606-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6157712-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6619969-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.6620188-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6620592-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6928582-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.6928946-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.6929039-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.7400317-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.7400709-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.7400747-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.7708287-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.7708523-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.7708560-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8181679-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.8181973-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8182056-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8501828-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.8502427-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8502650-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8973813-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.8974215-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.8974327-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.9296139-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.9296349-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.9296468-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.9751716-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:25.9751946-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:25.9751981-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.0222788-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.0223564-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.0224093-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.0532678-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.0533047-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.0533148-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1001835-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.1002187-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1002244-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1317228-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.1317691-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1317727-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1771644-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.1772033-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.1772072-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.2078781-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.2079280-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.2079526-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.2548415-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.2548786-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.2548881-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3024523-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.3025125-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3025380-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3335923-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.3336509-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3336765-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3811497-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.3812426-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.3813202-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4133896-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.4135068-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4135320-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4588356-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.4588822-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4589183-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4892632-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.4893328-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.4893949-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.5355416-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.5355741-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.5355811-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.5838830-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.5841247-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.5841520-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6138298-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.6139041-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6139419-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6610886-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.6611427-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6611604-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6917283-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.6917692-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.6917754-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.7382682-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.7382963-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.7383024-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.7686787-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.7687096-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.7687400-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8146312-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.8146636-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8146840-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8612479-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.8612782-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8612947-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8923988-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.8924409-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.8924575-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.9385242-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.9385872-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.9386086-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.9698269-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:26.9698950-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:26.9699192-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0158342-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.0158767-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0158945-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0614435-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.0614884-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0615287-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0923246-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.0923859-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.0923947-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.1373963-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.1374227-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.1374322-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.1682119-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.1682344-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.1682597-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2147121-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.2147686-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2147927-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2625094-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.2625443-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2625535-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2938694-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.2939215-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.2939456-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.3414623-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.3414840-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.3414969-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.3737519-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.3738095-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.3738260-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.4217701-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.4217950-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.4218045-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.4534618-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.4534960-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.4535055-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.5004890-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.5005356-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.5005412-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.5770231-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.5770903-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.5770987-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.6084683-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.6085082-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.6085120-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.6549801-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.6550075-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.6550294-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7018027-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.7018507-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7018896-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7339316-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.7339797-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7339936-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7811750-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.7812102-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.7812187-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8129799-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.8130393-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8130736-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8598521-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.8599045-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8599292-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8914193-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.8914546-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.8914679-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.9373804-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.9374091-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.9374336-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.9687292-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:27.9687549-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:27.9687596-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0146213-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.0146660-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0146818-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0606539-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.0606823-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0606944-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0918821-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.0919054-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.0919089-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.1387611-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.1388316-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.1388401-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.1690990-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.1691226-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.1691270-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2144866-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.2145097-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2145488-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2592128-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.2592652-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2592775-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2902654-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.2903243-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.2903447-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.3368944-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.3369317-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.3369405-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.3817233-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.3817614-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.3817649-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4136430-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.4136899-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4136938-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4608137-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.4608473-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4608558-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4916542-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.4917027-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.4917239-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.5384846-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.5385318-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.5385354-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.5694702-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.5695012-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.5695098-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6158199-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.6158596-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6158637-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6618311-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.6618546-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6618586-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6914899-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.6915422-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.6915503-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.7388004-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.7388399-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.7388491-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.7701675-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.7702212-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.7702605-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8180599-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.8181217-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8181377-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8505528-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.8505844-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8505932-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8961385-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.8961756-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.8961949-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.9418834-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.9419097-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.9419200-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.9728543-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:28.9728930-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:28.9729019-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0186381-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.0186665-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0186737-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0507777-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.0508288-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0508718-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0975011-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.0975270-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.0975369-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.1284255-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.1284922-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.1285054-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.1752685-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.1753128-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.1753230-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.2214461-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.2214863-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.2215003-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.2525637-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.2526271-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.2526375-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3004404-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.3004655-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3004691-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3323164-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.3323410-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3323656-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3804344-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.3804658-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.3804753-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4101447-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.4101840-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4101931-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4574301-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.4574667-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4574749-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4895393-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.4895906-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.4896265-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.5375873-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.5376287-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.5376369-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.5683483-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.5683951-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.5684042-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6131717-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.6132060-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6132272-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6611075-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.6611445-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6611562-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6929998-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.6930357-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.6930441-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.7399582-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.7399914-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.7399980-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.7718199-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.7718545-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.7718635-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.8195356-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.8195746-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.8195838-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.8514571-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Broadcast Detected
+2022-01-17T17:01:29.8515056-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
+2022-01-17T17:01:29.8515152-08:00	INFO	[ChromaControl.Hosting.ModuleService]	[0]	Apply Lights
