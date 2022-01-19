@@ -26,11 +26,8 @@ if (result == LFX_Result.LFX_SUCCESS)
             lightFX.LFX_SetLightColor(devIndex, lightIndex, lightIndex % 2 == 0 ? red : green);
     }
 
-     /*
     for (int devIndex = 0; devIndex < numDevs; devIndex++)
     {
-        StringBuilder devDescription;
-        LFX_DeviceType type;
         string temp;
         temp = lightFX.LFX_GetDeviceDescription(devIndex);
         if (result != LFX_Result.LFX_SUCCESS)
@@ -41,7 +38,6 @@ if (result == LFX_Result.LFX_SUCCESS)
         int numLights = lightFX.LFX_GetNumLights(devIndex);
         for (int lightIndex = 0; lightIndex < numLights; lightIndex++)
         {
-            StringBuilder description;
             temp = lightFX.LFX_GetLightDescription(devIndex, lightIndex);
             if (result != LFX_Result.LFX_SUCCESS)
                 continue;
@@ -54,7 +50,7 @@ if (result == LFX_Result.LFX_SUCCESS)
             Console.WriteLine(string.Format("\tLight: {0} \tDescription: {1} \tColor: {2}", lightIndex, temp, color));
         }
     }
-    */
+
     lightFX.LFX_Update();
     Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
     Console.ReadLine();
