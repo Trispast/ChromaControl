@@ -66,6 +66,7 @@ namespace ChromaControl.Providers.LightFX
         public void RequestControl()
         {
             _sdk.LFX_Initialize();
+            _sdk.LFX_Reset();
         }
 
         public void ReleaseControl()

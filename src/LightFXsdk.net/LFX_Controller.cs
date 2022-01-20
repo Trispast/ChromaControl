@@ -153,6 +153,10 @@ namespace LightFXsdk
         [DllImport("LightFX.dll", EntryPoint = "LFX_SetLightColor", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
         private static extern LFX_Result LFX_SetLightColor_Native(uint devIndex, uint lightIndex, ref LFX_ColorStruct lightCol);
 
+        [SuppressUnmanagedCodeSecurity]
+        [DllImport("LightFX.dll", EntryPoint = "LFX_SetTiming", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
+        private static extern LFX_Result LFX_SetTiming_Native(uint timing);
+
 
         public LFX_Result LFX_Initialize()
         {
@@ -197,7 +201,6 @@ namespace LightFXsdk
                 return string.Empty;
 
         }
-
         /*
          * Fatal error.System.AccessViolationException: Attempted to read or write protected memory.This is often an indication that other memory is corrupt.
            at System.SpanHelpers.IndexOf(Byte ByRef, Byte, Int32)
@@ -243,6 +246,11 @@ namespace LightFXsdk
             return result;
         }
 
+        public LFX_Result LFX_SetTiming(int timing)
+        {
+
+            return LFX_SetTiming_Native((uint)timing);
+        }
     };
 
 }

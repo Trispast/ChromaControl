@@ -32,6 +32,7 @@ namespace ChromaControl.Providers.LightFX
 
             if (result == LFX_Result.LFX_SUCCESS)
             {
+                result = _sdk.LFX_SetTiming(80);
                 if (_deviceIndex == 0)
                     _description = "Alienware 34 Curved Monitor";
                 else
@@ -53,6 +54,7 @@ namespace ChromaControl.Providers.LightFX
         {
             if (NumberOfLights > 0)
             {
+
                 foreach (LightFXDeviceLight light in Lights)
                 {
                     LFX_Result result = _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
@@ -60,7 +62,6 @@ namespace ChromaControl.Providers.LightFX
                     LFX_ColorStruct color = _sdk.LFX_GetLightColor(_deviceIndex, light.index);
                 }
                 _sdk.LFX_Update();
-
             }
         }
 
