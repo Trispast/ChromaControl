@@ -7,6 +7,7 @@ using System.Text;
 
 
 
+/*
 var lightFX = new LightFXController();
 
 var result = lightFX.LFX_Initialize();
@@ -25,6 +26,7 @@ if (result == LFX_Result.LFX_SUCCESS)
         for (int lightIndex = 0; lightIndex < numLights; lightIndex++)
             lightFX.LFX_SetLightColor(devIndex, lightIndex, lightIndex % 2 == 0 ? red : green);
     }
+
 
     for (int devIndex = 0; devIndex < numDevs; devIndex++)
     {
@@ -50,34 +52,12 @@ if (result == LFX_Result.LFX_SUCCESS)
             Console.WriteLine(string.Format("\tLight: {0} \tDescription: {1} \tColor: {2}", lightIndex, temp, color));
         }
     }
+    
+lightFX.LFX_Update();
+Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
+Console.ReadLine();
+lightFX.LFX_Release();
 
-    lightFX.LFX_Update();
-    Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
-    Console.ReadLine();
-    lightFX.LFX_Release();
-
-    var lightFx2 = new LightFXDeviceProvider();
-
-    lightFx2.Initialize();
-
-    var numDevs2 =lightFx2.Devices.Count();
-
-    foreach (var device in lightFx2.Devices)
-    {
-        int numLights2 = device.NumberOfLights;
-
-        var green = new LFX_ColorStruct(255, 0, 255, 255);
-        var red = new LFX_ColorStruct(255, 255, 0, 255);
-        foreach (var light in device.Lights)
-        {
-            light.Color = Color.Red;
-        }
-        device.ApplyLights();
-    }
-
-    Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
-    Console.ReadLine();
-    lightFx2.ReleaseControl();
 }
 else
 {
@@ -91,3 +71,28 @@ else
             break;
     }
 }
+*/
+
+
+var lightFx2 = new LightFXDeviceProvider();
+
+lightFx2.Initialize();
+
+var numDevs2 = lightFx2.Devices.Count();
+
+foreach (var device in lightFx2.Devices)
+{
+    int numLights2 = device.NumberOfLights;
+
+    var green = new LFX_ColorStruct(255, 0, 255, 255);
+    var red = new LFX_ColorStruct(255, 255, 0, 255);
+    foreach (var light in device.Lights)
+    {
+        light.Color = Color.Red;
+    }
+    device.ApplyLights();
+}
+
+Console.WriteLine("Done.\r\rPress ENTER key to finish ...");
+Console.ReadLine();
+lightFx2.ReleaseControl();

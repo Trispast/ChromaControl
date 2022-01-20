@@ -4,9 +4,9 @@ using System.Runtime.InteropServices;
 using System.Security;
 public struct LFX_ColorStruct
 {
-    public byte blue;
-    public byte green;
     public byte red;
+    public byte green;
+    public byte blue;
     public byte brightness;
 
     public LFX_ColorStruct(byte brightness, byte red, byte green, byte blue)
@@ -28,7 +28,6 @@ public struct LFX_ColorStruct
     public static implicit operator LFX_ColorStruct(Color color)
     {
         return new LFX_ColorStruct(color);
-
     }
 };
 
@@ -132,7 +131,7 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetDeviceDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, out StringBuilder devDesc, uint devDescSize, out StringBuilder devType);
+        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, out StringBuilder devDesc, uint devDescSize, out LFX_DeviceType devType);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetNumLights", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
@@ -191,14 +190,22 @@ namespace LightFXsdk
 
         public string LFX_GetDeviceDescription(int devIndex)
         {
-            uint len = 255;
-            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out StringBuilder devDesc, len, out StringBuilder type);
+            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out StringBuilder devDesc, 255, out LFX_DeviceType type);
             if (result == LFX_Result.LFX_SUCCESS)
                 return devDesc.ToString();
             else
                 return string.Empty;
 
         }
+
+        /*
+         * Fatal error.System.AccessViolationException: Attempted to read or write protected memory.This is often an indication that other memory is corrupt.
+           at System.SpanHelpers.IndexOf(Byte ByRef, Byte, Int32)
+           at System.String.strlen(Byte*)
+           at LightFXsdk.LightFXController.LFX_GetDeviceDescription_Native(UInt32, System.Text.StringBuilder ByRef, UInt32, System.Text.StringBuilder ByRef)
+           at LightFXsdk.LightFXController.LFX_GetDeviceDescription(Int32)
+           at Program.<Main>$(System.String[])
+        */
 
         public int LFX_GetNumLights(int devIndex)
         {

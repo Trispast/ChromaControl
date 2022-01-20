@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightFXsdk.net", "LightFXsd
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LightFXsdk", "LightFXsdk", "{C927A710-8514-47DC-A31D-D0BE3B29A38A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightFXTest", "LightFXTest\LightFXTest.csproj", "{9AD51971-6DD3-4E41-95EA-6C842A779A1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightFXTest", "LightFXTest\LightFXTest.csproj", "{9AD51971-6DD3-4E41-95EA-6C842A779A1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

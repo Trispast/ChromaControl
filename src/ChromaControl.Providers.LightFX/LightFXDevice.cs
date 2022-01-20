@@ -55,23 +55,12 @@ namespace ChromaControl.Providers.LightFX
             {
                 foreach (LightFXDeviceLight light in Lights)
                 {
-                    _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
+                    LFX_Result result = _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
+
+                    LFX_ColorStruct color = _sdk.LFX_GetLightColor(_deviceIndex, light.index);
                 }
                 _sdk.LFX_Update();
 
-                /*
-                 
-Unhandled Exception: System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at AlienLabs.AlienFX.Communication.Generic.Classes.AlienFXCapableDeviceClass.SetVisualization(VisualizationData data)
-   at AlienLabs.AlienFX.Tools.Classes.CommunicationServiceClass.SetVisualization(String productID, VisualizationData visualizationData)
-   at LightFX.LightFXController.sendLightFXCommand(AlienFXCapableDevice device, CommandParameter command)
-   at System.Collections.Generic.List`1.ForEach(Action`1 action)
-   at LightFX.LightFXController.consumeQueue()
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.ThreadHelper.ThreadStart()
-                 */
             }
         }
 
