@@ -57,9 +57,9 @@ namespace ChromaControl.Providers.LightFX
 
                 foreach (LightFXDeviceLight light in Lights)
                 {
-                    LFX_Result result = _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
-
-                    LFX_ColorStruct color = _sdk.LFX_GetLightColor(_deviceIndex, light.index);
+                //   LFX_Result result = _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
+                    LFX_Position pos = _sdk.LFX_GetLightLocation(_deviceIndex, light.index);
+                    LFX_Result result = _sdk.LFX_Light(pos, light.Color);
                 }
                 _sdk.LFX_Update();
             }
