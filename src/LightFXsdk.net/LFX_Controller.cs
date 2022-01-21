@@ -4,9 +4,9 @@ using System.Runtime.InteropServices;
 using System.Security;
 public struct LFX_ColorStruct
 {
-    public byte red;
-    public byte green;
     public byte blue;
+    public byte green;
+    public byte red;
     public byte brightness;
 
     public LFX_ColorStruct(byte brightness, byte red, byte green, byte blue)
@@ -103,30 +103,10 @@ public enum LFX_ActionEnum
 
 namespace LightFXsdk
 {
-    /*    1    0 00001890 LFX_ActionColor
-          2    1 00001920 LFX_ActionColorEx
-          3    2 00001360 LFX_GetDeviceDescription
-          4    3 00001550 LFX_GetLightColor
-          5    4 00001490 LFX_GetLightDescription
-          6    5 00001540 LFX_GetLightLocation
-          7    6 00001300 LFX_GetNumDevices
-          8    7 00001430 LFX_GetNumLights
-          9    8 00001A40 LFX_GetVersion
-         10    9 00001010 LFX_Initialize
-         11    A 00001680 LFX_Light
-         12    B 00001160 LFX_Release
-         13    C 000011E0 LFX_Reset
-         14    D 00001B00 LFX_SetActionDuration
-         15    E 00001710 LFX_SetLightActionColor
-         16    F 000017B0 LFX_SetLightActionColorEx
-         17   10 000015F0 LFX_SetLightColor
-         18   11 000019E0 LFX_SetTiming
-         19   12 00001240 LFX_Update
-         20   13 000012A0 LFX_UpdateDefault
-    */
 
     public class LightFXController
     {
+
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_ActionColor", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
         private static extern LFX_Result LFX_ActionColor_Native(LFX_Position pos, LFX_ActionEnum action, LFX_ColorStruct color);
@@ -137,7 +117,7 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetDeviceDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, out StringBuilder devDesc, uint devDescSize, out LFX_DeviceType devType);
+        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, [MarshalAs(UnmanagedType.LPWStr)] out string devDesc, ref uint devDescSize, out LFX_DeviceType devType);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightColor", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
@@ -145,7 +125,7 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_GetLightDescription_Native(uint devIndex, uint lightIndex, out StringBuilder lightDesc, uint lightDescSize);
+        private static extern LFX_Result LFX_GetLightDescription_Native(uint devIndex, uint lightIndex, [MarshalAs(UnmanagedType.LPWStr)] out string lightDesc, ref uint lightDescSize);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightLocation", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
@@ -198,7 +178,8 @@ namespace LightFXsdk
         public string LFX_GetDeviceDescription(int devIndex)
         {
             LFX_DeviceType type;
-            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out StringBuilder devDesc, 255, out type);
+            uint len = 255;
+            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out string devDesc, ref len, out type);
             if (result == LFX_Result.LFX_SUCCESS)
                 return devDesc.ToString();
             else
@@ -216,7 +197,7 @@ namespace LightFXsdk
         public string LFX_GetLightDescription(int devIndex, int lightIndex)
         {
             uint len = 255;
-            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out StringBuilder lightDesc, len);
+            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out string lightDesc, ref len);
             if (result == LFX_Result.LFX_SUCCESS)
                 return lightDesc.ToString();
             else
@@ -254,7 +235,7 @@ namespace LightFXsdk
             if (result == LFX_Result.LFX_SUCCESS)
                 return version.ToString();
             else
-                return "Error";
+                return string.Empty;
         }
 
         public LFX_Result LFX_Initialize()
