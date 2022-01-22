@@ -117,15 +117,15 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetDeviceDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, [MarshalAs(UnmanagedType.LPWStr)] out string devDesc, ref uint devDescSize, out LFX_DeviceType devType);
+        private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, [MarshalAs(UnmanagedType.LPStr)] out StringBuilder devDesc, uint devDescSize, out LFX_DeviceType devType);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightColor", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
         private static extern LFX_Result LFX_GetLightColor_Native(uint devIndex, uint lightIndex, ref LFX_ColorStruct lightCol);
 
         [SuppressUnmanagedCodeSecurity]
-        [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_GetLightDescription_Native(uint devIndex, uint lightIndex, [MarshalAs(UnmanagedType.LPWStr)] out string lightDesc, ref uint lightDescSize);
+        [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightDescription", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi, SetLastError = false)]
+        private static extern LFX_Result LFX_GetLightDescription_Native(uint devIndex, uint lightIndex, out StringBuilder lightDesc, ref uint lightDescSize);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_GetLightLocation", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
@@ -165,7 +165,7 @@ namespace LightFXsdk
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_SetTiming", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
-        private static extern LFX_Result LFX_SetTiming_Native(uint timing);
+        private static extern LFX_Result LFX_SetTiming_Native(int timing);
 
         [SuppressUnmanagedCodeSecurity]
         [DllImport("LightFX.dll", EntryPoint = "LFX_Update", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
@@ -178,8 +178,8 @@ namespace LightFXsdk
         public string LFX_GetDeviceDescription(int devIndex)
         {
             LFX_DeviceType type;
-            uint len = 255;
-            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out string devDesc, ref len, out type);
+            uint len = 127;
+            LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out StringBuilder devDesc, len, out type);
             if (result == LFX_Result.LFX_SUCCESS)
                 return devDesc.ToString();
             else
@@ -197,7 +197,7 @@ namespace LightFXsdk
         public string LFX_GetLightDescription(int devIndex, int lightIndex)
         {
             uint len = 255;
-            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out string lightDesc, ref len);
+            LFX_Result result = LFX_GetLightDescription_Native((uint)devIndex, (uint)lightIndex, out StringBuilder lightDesc, ref len);
             if (result == LFX_Result.LFX_SUCCESS)
                 return lightDesc.ToString();
             else
@@ -277,7 +277,7 @@ namespace LightFXsdk
         public LFX_Result LFX_SetTiming(int timing)
         {
 
-            return LFX_SetTiming_Native((uint)timing);
+            return LFX_SetTiming_Native(timing);
         }
     };
 

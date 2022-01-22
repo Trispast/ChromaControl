@@ -1,0 +1,51 @@
+﻿//Definition from LFX2.h
+/*********************************************************
+Function: LFX_GetDeviceDescription
+Description:
+	Get the description of a device attached to the system
+Inputs:	Accepts an index to the device
+Outputs: 
+	Populates a character string with the device's description
+	Populates a ushort with the device type (see LFXDecl.h for device types)
+Returns: 
+	LFX_ERROR_NOINIT if the system is not yet initialized.
+	LFX_ERROR_NODEVS if the system is initialized but no devices are available.
+	LFX_ERROR_BUFFSIZE if the buffer provided is too small.
+	LFX_FAILURE or LFX_SUCCESS otherwise.
+*********************************************************/
+
+FN_DECLSPEC LFX_RESULT STDCALL LFX_GetDeviceDescription(const unsigned int, char* const, const unsigned int, unsigned char* const);
+
+
+
+
+//LFX_Controller.cs
+
+[SuppressUnmanagedCodeSecurity]
+[DllImport("LightFX.dll", EntryPoint = "LFX_GetDeviceDescription", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
+private static extern LFX_Result LFX_GetDeviceDescription_Native(uint devIndex, [MarshalAs(UnmanagedType.LPStr)] out StringBuilder devDesc, uint devDescSize, out LFX_DeviceType devType);
+
+public string LFX_GetDeviceDescription(int devIndex)
+{
+    LFX_DeviceType type;
+    uint len = 255;
+    LFX_Result result = LFX_GetDeviceDescription_Native((uint)devIndex, out StringBuilder devDesc, len, out type);
+    if (result == LFX_Result.LFX_SUCCESS)
+          return devDesc.ToString();
+    else
+          return string.Empty;
+
+}
+
+
+/*
+Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+   at System.SpanHelpers.IndexOf(Byte ByRef, Byte, Int32)
+   at System.String.strlen(Byte*)
+   at LightFXsdk.LightFXController.LFX_GetDeviceDescription_Native(UInt32, System.Text.StringBuilder ByRef, UInt32 ByRef, LFX_DeviceType ByRef)
+   at LightFXsdk.LightFXController.LFX_GetDeviceDescription(Int32)
+   at ChromaControl.Providers.LightFX.LightFXDevice..ctor(LightFXsdk.LightFXController, Int32)
+   at ChromaControl.Providers.LightFX.LightFXDeviceProvider.Initialize()
+   at Program.<Main>$(System.String[])
+
+*/

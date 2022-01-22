@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChromaControl.Providers.LightFX\ChromaControl.Providers.LightFX.csproj" />
-    <ProjectReference Include="..\LightFXsdk.net\LightFXsdk.net.csproj" />
   </ItemGroup>
 
 </Project>

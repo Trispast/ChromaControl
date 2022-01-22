@@ -32,12 +32,11 @@ namespace ChromaControl.Providers.LightFX
 
             if (result == LFX_Result.LFX_SUCCESS)
             {
-                result = _sdk.LFX_SetTiming(80);
                 if (_deviceIndex == 0)
                     _description = "Alienware 34 Curved Monitor";
                 else
                     _description = "Alienware AuroraR5 Chassis";
-                
+
                 //_description = _sdk.LFX_GetDeviceDescription(deviceIndex);
 
                 int numLights = _sdk.LFX_GetNumLights(deviceIndex);
@@ -59,7 +58,7 @@ namespace ChromaControl.Providers.LightFX
                 {
                 //   LFX_Result result = _sdk.LFX_SetLightColor(_deviceIndex, light.index, light.Color);
                     LFX_Position pos = _sdk.LFX_GetLightLocation(_deviceIndex, light.index);
-                    LFX_Result result = _sdk.LFX_Light(pos, light.Color);
+                    LFX_Result result = _sdk.LFX_Light(LFX_Position.LFX_All, light.Color);
                 }
                 _sdk.LFX_Update();
             }

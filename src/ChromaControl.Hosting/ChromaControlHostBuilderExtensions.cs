@@ -36,8 +36,8 @@ namespace ChromaControl.Hosting
         /// <returns>The host builder</returns>
         public static IHostBuilder UseChromaControl(this IHostBuilder hostBuilder)
         {
-            //var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
-            var debugMode = true;
+            var debugMode = ApplicationData.Current.LocalSettings.Values["DebugMode"];
+
 
             if (debugMode != null && (bool)debugMode)
             {
@@ -45,8 +45,8 @@ namespace ChromaControl.Hosting
                 Console.Title = Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location);
             }
 
-            //var logFolder = Path.Combine(ApplicationData.Current.LocalFolder.Path, "logs");
-            var logFolder = "c:\\logs\\";
+            var logFolder = Path.Combine(ApplicationData.Current.LocalFolder.Path, "logs");
+
 
             if (!Directory.Exists(logFolder))
                 Directory.CreateDirectory(logFolder);
@@ -56,7 +56,7 @@ namespace ChromaControl.Hosting
                 .ConfigureLogging((hostingContext, logging) =>
                 {
                     // Disabling logging due to IOException, this only started in 0.1.2 which is weird.
-                    logging.AddFile(Path.Combine(logFolder, $"{Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)}.log"), append: true);
+                    //logging.AddFile(Path.Combine(logFolder, $"{Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)}.log"), append: true);
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
